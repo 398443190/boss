@@ -1,0 +1,33 @@
+.list-header {
+    padding: 1rem;
+    border-bottom: 1px solid #999;
+}
+.list-header img{
+    height: 1.2rem;
+}
+.list-header form {
+    width: 100%;
+}
+.list-header form .inner {
+    width: 100%;
+    background: #f5f8f9;
+    margin: 0 1rem;
+    line-height: 1.7rem;
+    border-radius: 2rem;
+    padding: 0 1rem;
+}
+.list-header form .inner  input{
+    width: 90%;
+    background: transparent;
+    border: none;
+    outline: 0;
+    color: #999;
+}
+.list-header form button {
+    border: none;
+    background: none;
+    font-size: 0.9rem;
+    color: #5bd4c7;
+    flex-shrink: 0;
+    padding: 0;
+}
