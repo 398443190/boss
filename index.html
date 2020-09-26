@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>「深圳招聘网」-海量深圳人才招聘信息 - BOSS直聘</title>
     <link rel="stylesheet" href="./style/main.css">
 </head>
+
 <body>
-    <div class="container">
+    <div class="container" id="app">
         <div class="home-header">
             <img src="./img/home-search-text.png" alt="">
             <form action="" class="">
@@ -17,69 +19,13 @@
         </div>
 
         <div class="home-categories">
-            <dl class="">
+            <dl class="" v-for="(item, index) in categories">
                 <dt class="">
-                    <img src="./img/technology.png" alt="">
-                    <div class="">技术</div>
-                    <dd class="">
-                        <a href="" class="tag">java</a>
-                        <a href="" class="tag">java</a>
-                        <a href="" class="tag">java</a>
-                        <a href="" class="tag">java</a>
-                        <a href="" class="tag">java</a>
-                    </dd>
-                </dt>
-            </dl>
-            <dl class="">
-                <dt class="">
-                    <img src="./img/technology.png" alt="">
-                    <div class="">技术</div>
-                    <dd class="">
-                        <a href="" class="tag">java</a>
-                        <a href="" class="tag">java</a>
-                        <a href="" class="tag">java</a>
-                        <a href="" class="tag">java</a>
-                        <a href="" class="tag">java</a>
-                    </dd>
-                </dt>
-            </dl>
-            <dl class="">
-                <dt class="">
-                    <img src="./img/technology.png" alt="">
-                    <div class="">技术</div>
-                    <dd class="">
-                        <a href="" class="tag">java</a>
-                        <a href="" class="tag">java</a>
-                        <a href="" class="tag">java</a>
-                        <a href="" class="tag">java</a>
-                        <a href="" class="tag">java</a>
-                    </dd>
-                </dt>
-            </dl>
-            <dl class="">
-                <dt class="">
-                    <img src="./img/technology.png" alt="">
-                    <div class="">技术</div>
-                    <dd class="">
-                        <a href="" class="tag">java</a>
-                        <a href="" class="tag">java</a>
-                        <a href="" class="tag">java</a>
-                        <a href="" class="tag">java</a>
-                        <a href="" class="tag">java</a>
-                    </dd>
-                </dt>
-            </dl>
-            <dl class="">
-                <dt class="">
-                    <img src="./img/technology.png" alt="">
-                    <div class="">技术</div>
-                    <dd class="">
-                        <a href="" class="tag">java</a>
-                        <a href="" class="tag">java</a>
-                        <a href="" class="tag">java</a>
-                        <a href="" class="tag">java</a>
-                        <a href="" class="tag">java</a>
-                    </dd>
+                    <img :src="item.icon" alt="">
+                    <div class="">{{item.name}}</div>
+                <dd class="">
+                    <a href="" v-for="(tag, index) in item.tags" class="tag">{{tag}}</a>
+                </dd>
                 </dt>
             </dl>
         </div>
@@ -88,5 +34,25 @@
             <p class="">企业服务热线和举报投诉：400 065 5799</p>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js"></script>
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            data: {
+                categories: []
+            },
+            created: function () {
+                const that = this
+                fetch('http://127.0.0.1:5500/api/index.json')
+                    .then(function (res) {
+                        return res.json()
+                    }).then(function (data) {
+                        console.log(data)
+                        that.categories = data
+                    })
+            }
+        })
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,87 @@
+[
+    {
+        "type": "经验",
+        "options": [
+            {
+                "text": "不限", "id": null
+            },
+            {
+                "text": "应届生", "id": null
+            },
+            {
+                "text": "一年以内", "id": null
+            },
+            {
+                "text": "一到三年", "id": null
+            }
+        ]
+    },
+    {
+        "type": "学历",
+        "options": [
+            {
+                "text": "不限", "id": null
+            },
+            {
+                "text": "高中", "id": null
+            },
+            {
+                "text": "大专", "id": null
+            },
+            {
+                "text": "本科", "id": null
+            }
+        ]
+    },
+    {
+        "type": "薪资",
+        "options": [
+            {
+                "text": "不限", "id": null
+            },
+            {
+                "text": "应届生", "id": null
+            },
+            {
+                "text": "一年以内", "id": null
+            },
+            {
+                "text": "一到三年", "id": null
+            }
+        ]
+    },
+    {
+        "type": "规模",
+        "options": [
+            {
+                "text": "不限", "id": null
+            },
+            {
+                "text": "应届生", "id": null
+            },
+            {
+                "text": "一年以内", "id": null
+            },
+            {
+                "text": "一到三年", "id": null
+            }
+        ]
+    },
+    {
+        "type": "融资",
+        "options": [
+            {
+                "text": "不限", "id": null
+            },
+            {
+                "text": "应届生", "id": null
+            },
+            {
+                "text": "一年以内", "id": null
+            },
+            {
+                "text": "一到三年", "id": null
+            }
+        ]
+    }
+]

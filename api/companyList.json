@@ -1,0 +1,51 @@
+[
+    {
+        "logo": "./img/compary.jpg",
+        "title": "高级web前端开发工程师",
+        "salary": "7-18K",
+        "company": "深圳腾讯",
+        "tags": ["深圳", "一年以内", "本科"]
+    },
+    {
+        "logo": "./img/compary.jpg",
+        "title": "高级web前端开发工程师",
+        "salary": "7-12K",
+        "company": "深圳腾讯",
+        "tags": ["深圳", "一年以内", "本科"]
+    },
+    {
+        "logo": "./img/compary.jpg",
+        "title": "高级web前端开发工程师",
+        "salary": "7-12K",
+        "company": "深圳腾讯",
+        "tags": ["深圳", "一年以内", "本科"]
+    },
+    {
+        "logo": "./img/compary.jpg",
+        "title": "高级web前端开发工程师",
+        "salary": "7-12K",
+        "company": "深圳腾讯",
+        "tags": ["深圳", "一年以内", "本科"]
+    },
+    {
+        "logo": "./img/compary.jpg",
+        "title": "高级web前端开发工程师",
+        "salary": "7-12K",
+        "company": "深圳腾讯",
+        "tags": ["深圳", "一年以内", "本科"]
+    },
+    {
+        "logo": "./img/compary.jpg",
+        "title": "高级web前端开发工程师",
+        "salary": "7-12K",
+        "company": "深圳腾讯",
+        "tags": ["深圳", "一年以内", "本科"]
+    },
+    {
+        "logo": "./img/compary.jpg",
+        "title": "高级web前端开发工程师",
+        "salary": "7-12K",
+        "company": "深圳腾讯",
+        "tags": ["深圳", "一年以内", "本科"]
+    }
+]

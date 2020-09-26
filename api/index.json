@@ -1,0 +1,17 @@
+[
+    {
+        "icon": "./img/technology.png",
+        "name": "技术",
+        "tags": ["JAVA", "PHP", "NODEJS", "python"]
+    },
+    {
+        "icon": "./img/technology.png",
+        "name": "测试",
+        "tags": ["JAVA", "PHP", "NODEJS", "python"]
+    },
+    {
+        "icon": "./img/technology.png",
+        "name": "运维",
+        "tags": ["JAVA", "PHP", "NODEJS", "python"]
+    }
+]

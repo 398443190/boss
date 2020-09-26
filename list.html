@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="app">
         <div class="list-header flex">
             <form action="" class="flex">
                 <img src="./img/icon-home.png" alt="" class="">
@@ -23,223 +23,64 @@
         </div>
         <!-- end of header -->
         <div class="filter flex">
-            <dl class="active">
-                <dt class="">经验</dt>
+            <dl class="active1" v-for="(item, index) in fliterTpye" :key="index">
+                <dt class="">{{item.type}}</dt>
                 <dd class="active">
                     <ul class="">
-                        <li class="active">不限</li>
-                        <li class="">应届生</li>
-                        <li class="">一年以内</li>
-                        <li class="">1-3年</li>
-                        <li class="">3-5年</li>
-                    </ul>
-                </dd>
-            </dl>
-            <dl class="">
-                <dt class="">经验</dt>
-                <dd class="">
-                    <ul class="">
-                        <li class="">应届生</li>
-                        <li class="">一年以内</li>
-                        <li class="">1-3年</li>
-                        <li class="">3-5年</li>
-                        <li class="">5-10年</li>
-                    </ul>
-                </dd>
-            </dl>
-            <dl class="">
-                <dt class="">经验</dt>
-                <dd class="">
-                    <ul class="">
-                        <li class="">应届生</li>
-                        <li class="">一年以内</li>
-                        <li class="">1-3年</li>
-                        <li class="">3-5年</li>
-                        <li class="">5-10年</li>
-                    </ul>
-                </dd>
-            </dl>
-            <dl class="">
-                <dt class="">经验</dt>
-                <dd class="">
-                    <ul class="">
-                        <li class="">应届生</li>
-                        <li class="">一年以内</li>
-                        <li class="">1-3年</li>
-                        <li class="">3-5年</li>
-                        <li class="">5-10年</li>
-                    </ul>
-                </dd>
-            </dl>
-            <dl class="">
-                <dt class="">经验</dt>
-                <dd class="">
-                    <ul class="">
-                        <li class="">应届生</li>
-                        <li class="">一年以内</li>
-                        <li class="">1-3年</li>
-                        <li class="">3-5年</li>
-                        <li class="">5-10年</li>
+                        <li class="active" v-for="(option, index) in item.options">{{option.text}}</li>
                     </ul>
                 </dd>
             </dl>
         </div>
         <!-- end of filter -->
         <ul class="job-list">
-            <li class="">
+            <li class="" v-for="(item, index) in companyList" :key="index">
                 <a href="" class="job-item flex">
-                    <img src="./img/compary.jpg" alt="" class="">
+                    <img :src="item.logo" alt="" class="">
                     <div class="text">
                         <div class="title flex">
-                            高级web前端开发工程师
-                            <span class="salary">7-12K</span>
+                            {{item.title}}
+                            <span class="salary">{{item.salary}}</span>
                         </div>
                         <div class="company">
-                            深圳腾讯
+                            {{item.company}}
                         </div>
                         <div class="props">
-                            <span class="">深圳</span>
-                            <span class="">一年以内</span>
-                            <span class="">本科</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="">
-                <a href="" class="job-item flex">
-                    <img src="./img/compary.jpg" alt="" class="">
-                    <div class="text">
-                        <div class="title flex">
-                            高级web前端开发工程师
-                            <span class="salary">7-12K</span>
-                        </div>
-                        <div class="company">
-                            深圳腾讯
-                        </div>
-                        <div class="props">
-                            <span class="">深圳</span>
-                            <span class="">一年以内</span>
-                            <span class="">本科</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="">
-                <a href="" class="job-item flex">
-                    <img src="./img/compary.jpg" alt="" class="">
-                    <div class="text">
-                        <div class="title flex">
-                            高级web前端开发工程师
-                            <span class="salary">7-12K</span>
-                        </div>
-                        <div class="company">
-                            深圳腾讯
-                        </div>
-                        <div class="props">
-                            <span class="">深圳</span>
-                            <span class="">一年以内</span>
-                            <span class="">本科</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="">
-                <a href="" class="job-item flex">
-                    <img src="./img/compary.jpg" alt="" class="">
-                    <div class="text">
-                        <div class="title flex">
-                            高级web前端开发工程师
-                            <span class="salary">7-12K</span>
-                        </div>
-                        <div class="company">
-                            深圳腾讯
-                        </div>
-                        <div class="props">
-                            <span class="">深圳</span>
-                            <span class="">一年以内</span>
-                            <span class="">本科</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="">
-                <a href="" class="job-item flex">
-                    <img src="./img/compary.jpg" alt="" class="">
-                    <div class="text">
-                        <div class="title flex">
-                            高级web前端开发工程师
-                            <span class="salary">7-12K</span>
-                        </div>
-                        <div class="company">
-                            深圳腾讯
-                        </div>
-                        <div class="props">
-                            <span class="">深圳</span>
-                            <span class="">一年以内</span>
-                            <span class="">本科</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="">
-                <a href="" class="job-item flex">
-                    <img src="./img/compary.jpg" alt="" class="">
-                    <div class="text">
-                        <div class="title flex">
-                            高级web前端开发工程师
-                            <span class="salary">7-12K</span>
-                        </div>
-                        <div class="company">
-                            深圳腾讯
-                        </div>
-                        <div class="props">
-                            <span class="">深圳</span>
-                            <span class="">一年以内</span>
-                            <span class="">本科</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="">
-                <a href="" class="job-item flex">
-                    <img src="./img/compary.jpg" alt="" class="">
-                    <div class="text">
-                        <div class="title flex">
-                            高级web前端开发工程师
-                            <span class="salary">7-12K</span>
-                        </div>
-                        <div class="company">
-                            深圳腾讯
-                        </div>
-                        <div class="props">
-                            <span class="">深圳</span>
-                            <span class="">一年以内</span>
-                            <span class="">本科</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="">
-                <a href="" class="job-item flex">
-                    <img src="./img/compary.jpg" alt="" class="">
-                    <div class="text">
-                        <div class="title flex">
-                            高级web前端开发工程师
-                            <span class="salary">7-12K</span>
-                        </div>
-                        <div class="company">
-                            深圳腾讯
-                        </div>
-                        <div class="props">
-                            <span class="">深圳</span>
-                            <span class="">一年以内</span>
-                            <span class="">本科</span>
+                            <span class="" v-for="(tag, index) in item.tags">{{tag}}</span>
                         </div>
                     </div>
                 </a>
             </li>
         </ul>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js"></script>
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            data: {
+                fliterTpye: [],
+                companyList: []
+            },
+            created: function () {
+                const that = this
+                fetch('http://127.0.0.1:5500/api/filter.json')
+                    .then(function (res) {
+                        return res.json()
+                    }).then(function (data) {
+                        console.log(data)
+                        that.fliterTpye = data
+                    }),
+                    
+                fetch('http://127.0.0.1:5500/api/companyList.json')
+                    .then(function (res) {
+                        return res.json()
+                    }).then(function (data) {
+                        console.log(data)
+                        that.companyList = data
+                    })
+            }
+        })
+    </script>
 </body>
 
 </html>
