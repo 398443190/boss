@@ -3,6 +3,28 @@ body{
     font-family: Arial, Helvetica, 'Microsoft Yahei', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+/* 公共flex布局 */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* 公共padding布局 */
+.padding {
+    padding: 1rem;
+}
+*{
+    box-sizing: border-box;
+}
+.btn {
+    border: none;
+    font-size: .9rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 2rem;
+}
+.grey {
+    color: #9fa3b0;
+}
 .home-header {
     background: url('../img/home-bg.png') no-repeat;
     background-size: 100% auto;
@@ -71,9 +93,4 @@ body{
 }
 .home-footer p {
     margin: 0.2rem 0;
-}
-.flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }

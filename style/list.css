@@ -1,6 +1,6 @@
 .list-header {
     padding: 1rem;
-    border-bottom: 1px solid #999;
+    /* border-bottom: 1px solid #999; */
 }
 .list-header img{
     height: 1.2rem;
@@ -30,4 +30,102 @@
     color: #5bd4c7;
     flex-shrink: 0;
     padding: 0;
+}
+.filter {
+    padding: 0.5rem 1rem;
+    border: 1px solid #f5f8f9;
+}
+.filter dl, .filter dd {
+    margin: 0;
+    z-index: 999;
+}
+.filter dt {
+    font-size: 0.8rem;
+}
+.filter .active dt{
+    color: #333;
+}
+.filter dt:after {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border: 1px solid #999;
+    margin-left: 0.5rem;
+    border-style: solid none none solid;
+    transform: rotate(225deg);
+    transform-origin: 2px 1px;
+    transition: all 1s;
+}
+.filter .active dt::after{
+    transform: rotate(45deg);
+    
+}
+.filter dd {
+    display: none;
+}
+.filter .active dd {
+    display: block;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 95px;
+    left: 0;
+}
+
+.filter .active dd ul {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+.filter .active dd ul li {
+    line-height: 3.5rem;
+    text-indent: 1rem;
+    color: #aaa;
+    list-style: none;
+}
+
+.filter .active dd ul li.active{
+    background: #f5f8f9;
+    color: #333;
+}
+.job-list {
+    margin: 0;
+    padding: 0;
+}
+.job-item {
+    margin: 1rem;
+    padding-bottom: 1rem;
+    color: #7e8793;
+    text-decoration: none;
+    border-bottom: 1px solid #f5f8f9;
+}
+.job-item img {
+    height: 3.5rem;
+    border-radius: 0.3rem;
+}
+.job-item .text {
+    width: 100%;
+    margin-left: 1rem;
+}
+.job-item .text .title{
+    color: #333;
+    font-size: .9rem;
+}
+.job-item .text .title .salary{
+    font-size: 1.2rem;
+    color: #fc6c38;
+}
+.job-item .text .company {
+    color: #333;
+    font-size: .8rem;
+    margin: .2rem 0;
+}
+.job-item .text .props {
+    font-size: .8rem;
+}
+.job-item .text .props span {
+    margin-right: .5rem;
 }
